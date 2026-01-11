@@ -1,10 +1,7 @@
 package api.example.simple_api.model.dto;
 
-import lombok.Data;
-
-@Data
-public class CreateBookRequest {
-    private String title;
-    private String author;
-    private String description;
-}
+public record CreateBookRequest(
+    String title, 
+    String author, 
+    String description
+) {}
